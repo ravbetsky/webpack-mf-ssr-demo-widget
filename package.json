@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ENV=development webpack serve",
     "build": "rm -rf build && yarn build:client && yarn build:server",
     "build:client": "webpack --mode production --config config/webpack.client.js",
     "build:server": "webpack --mode production --config config/webpack.server.js",

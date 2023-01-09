@@ -35,11 +35,5 @@ module.exports = (isProduction) => {
     resolve: {
       extensions: ["*", ".js", ".jsx"],
     },
-    devServer: {
-      static: {
-        directory: path.join(__dirname, "build"),
-      },
-      port: 3000,
-    },
   };
 };
